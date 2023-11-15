@@ -7,7 +7,7 @@ const App: React.FC = () => {
 const addClickHandler = (): void => {
   setCount(count + 1);
 }
-
+//test
   return (
     <div>
       <h1>Count: {count}</h1>
