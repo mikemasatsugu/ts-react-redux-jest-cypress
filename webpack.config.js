@@ -19,4 +19,13 @@ module.exports ={
     filename: "bundle.js",
     path: path.resolve(__dirname, "public"),
   },
+  devServer: {
+    static: {
+      publicPath: '/dist/',
+    },
+    port: 8080,
+    proxy: {
+      '/': 'http://localhost:3000'
+    },
+  },
 }
